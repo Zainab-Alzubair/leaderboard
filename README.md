@@ -29,7 +29,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Deployment
 
-- [Live Demo Link](#)
+- [Live Demo Link](https://zainab-alzubair.github.io/leaderboard/dist/)
 
 ## Authors
 
