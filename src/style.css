@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+}
+
+.left-coulmn {
+  width: 35%;
+}
+
+.head-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.refresh-btn {
+  font-weight: 500;
+  font-size: 1em;
+  color: black;
+  outline: none;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  width: 30%;
+  height: 30px;
+  background-color: #b4b6b7;
+}
+
+.refresh-btn:hover {
+  background-color: rgb(109, 108, 108);
+  color: #fff;
+}
+
+.table {
+  background-color: #fff;
+  position: relative;
+  padding: 1.8em 1.25em;
+  margin-top: 2em;
+  width: 100%;
+  box-shadow: 10px 20px 20px 10px rgba(10, 10, 10, 0.2);
+  border-radius: 0.6em;
+  height: 60vh;
+}
+
+.table-row {
+  background-color: #fff;
+  box-shadow: 10px 20px 20px 10px rgba(10, 10, 10, 0.2);
+  padding: 0.3em 0.6em;
+  margin-top: 0.6em;
+  border-bottom: 2px solid #d1d3d4;
+}
+
+.right-coulmn {
+  background-color: #fff;
+  position: relative;
+  padding: 1.8em 1.25em;
+  margin-top: 2em;
+  width: 30%;
+  box-shadow: 10px 20px 20px 10px rgba(10, 10, 10, 0.2);
+  border-radius: 0.6em;
+}
+
+.right-content {
+  background-color: #fff;
+  box-shadow: 10px 20px 20px 10px rgba(10, 10, 10, 0.2);
+  padding: 0.3em 0.6em;
+  margin-top: 0.6em;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 0.5em;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  box-shadow: 10px 20px 20px 10px rgba(142, 142, 142, 0.2);
+  outline: none;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+
+.submit-btn {
+  font-weight: 500;
+  font-size: 1em;
+  color: black;
+  background-color: #b4b6b7;
+  cursor: pointer;
+  width: 30%;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 0.2rem;
+}
+
+.submit-btn:hover {
+  background-color: rgb(109, 108, 108);
+  color: #fff;
+}
