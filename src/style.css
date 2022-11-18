@@ -13,9 +13,19 @@ body {
   align-items: center;
   gap: 20%;
 }
+@media (max-width: 768px) {
+  .content-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+   width: 100vh;
+  }
+}
 
 .left-coulmn {
-  width: 35%;
+  width: 40%;
 }
 
 .head-content {
@@ -36,6 +46,7 @@ body {
   width: 30%;
   height: 30px;
   background-color: #b4b6b7;
+  min-width: fit-content;
 }
 
 .refresh-btn:hover {
@@ -51,7 +62,8 @@ body {
   width: 100%;
   box-shadow: 10px 20px 20px 10px rgba(10, 10, 10, 0.2);
   border-radius: 0.6em;
-  height: 60vh;
+  height: 70vh;
+  overflow: scroll;
 }
 
 .table-row {
@@ -89,7 +101,10 @@ input {
   outline: none;
   border: none;
 }
-
+form{
+  display: flex;
+  flex-direction: column;
+}
 input:focus {
   outline: none;
   transform: scale(1.05);
@@ -106,6 +121,7 @@ input:focus {
   height: 30px;
   margin-bottom: 10px;
   padding: 0.2rem;
+  min-width: fit-content;
 }
 
 .submit-btn:hover {
