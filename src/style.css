@@ -7,12 +7,17 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.hide {
+  display: none;
+}
+
 .content-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20%;
 }
+
 @media (max-width: 768px) {
   .content-wrap {
     display: flex;
@@ -20,7 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20%;
-   width: 100vh;
+    width: 100vh;
   }
 }
 
@@ -46,7 +51,6 @@ body {
   width: 30%;
   height: 30px;
   background-color: #b4b6b7;
-  min-width: fit-content;
 }
 
 .refresh-btn:hover {
@@ -101,10 +105,12 @@ input {
   outline: none;
   border: none;
 }
-form{
+
+form {
   display: flex;
   flex-direction: column;
 }
+
 input:focus {
   outline: none;
   transform: scale(1.05);
@@ -121,7 +127,6 @@ input:focus {
   height: 30px;
   margin-bottom: 10px;
   padding: 0.2rem;
-  min-width: fit-content;
 }
 
 .submit-btn:hover {

@@ -6,6 +6,7 @@ const refresh = document.querySelector('.refresh-btn');
 const form = document.getElementById('form');
 const userInput = document.getElementById('user');
 const scoreInput = document.getElementById('score');
+const text = document.querySelector('.text');
 
 // submit form
 form.addEventListener('submit', (e) => {
@@ -16,7 +17,9 @@ form.addEventListener('submit', (e) => {
 });
 
 // refresh DOM
+
 refresh.addEventListener('click', () => {
+  text.className = 'hide';
   fetchData()
     .then((data) => {
       let result = '';
