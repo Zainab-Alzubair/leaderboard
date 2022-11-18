@@ -7,11 +7,15 @@ const form = document.getElementById('form');
 const userInput = document.getElementById('user');
 const scoreInput = document.getElementById('score');
 const text = document.querySelector('.text');
+const error = document.querySelector('.error');
 
 // submit form
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   postData();
+  if (userInput.value === '' || scoreInput.value === '') {
+    error.innerHTML = 'Please Enter a valid data';
+  }
   userInput.value = '';
   scoreInput.value = '';
 });
@@ -29,4 +33,3 @@ refresh.addEventListener('click', () => {
       document.querySelector('.table').innerHTML = result;
     });
 });
-
