@@ -5,6 +5,18 @@
 body {
   margin: 2rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(27,20,61);
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: antiquewhite;
+  margin-bottom: 4rem;
+}
+
+h2{
+  color: antiquewhite;
 }
 
 .hide {
@@ -41,21 +53,23 @@ body {
 }
 
 .refresh-btn {
-  font-weight: 500;
-  font-size: 1em;
-  color: black;
-  outline: none;
-  border: none;
-  border-radius: 0.3em;
+  color: #db3eb1;
+  border: 6px solid #db3eb1;
+  border-radius:15px;
+  padding: .5rem .5rem;
+  font-size: 16px;
+  font-family: tahoma;
+  letter-spacing:5px;
   cursor: pointer;
-  width: 30%;
-  height: 30px;
-  background-color: #b4b6b7;
+  font-weight: bold;
+  filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
+  transition: .5s;
 }
 
 .refresh-btn:hover {
-  background-color: rgb(109, 108, 108);
-  color: #fff;
+  color: black;
+  background-color: #db3eb1;
+  filter: drop-shadow(0 0 20px #db3eb1) contrast(2) brightness(2);
 }
 
 .table {
@@ -64,15 +78,15 @@ body {
   padding: 1.8em 1.25em;
   margin-top: 2em;
   width: 100%;
-  box-shadow: 10px 20px 20px 10px rgba(10, 10, 10, 0.2);
+  box-shadow: 10px 20px 20px 10px rgba(255, 23, 23, 0.2);
   border-radius: 0.6em;
-  height: 70vh;
+  height: 55vh;
   overflow: scroll;
 }
 
 .table-row {
   background-color: #fff;
-  box-shadow: 10px 20px 20px 10px rgba(10, 10, 10, 0.2);
+  box-shadow: 10px 20px 20px 10px rgb(202, 242, 145);
   padding: 0.3em 0.6em;
   margin-top: 0.6em;
   border-bottom: 2px solid #d1d3d4;
@@ -84,13 +98,13 @@ body {
   padding: 1.8em 1.25em;
   margin-top: 2em;
   width: 30%;
-  box-shadow: 10px 20px 20px 10px rgba(10, 10, 10, 0.2);
+  box-shadow: 10px 20px 20px 10px rgba(255, 23, 23, 0.2);
   border-radius: 0.6em;
 }
 
 .right-content {
   background-color: #fff;
-  box-shadow: 10px 20px 20px 10px rgba(10, 10, 10, 0.2);
+  box-shadow: 10px 20px 20px 10px rgb(188, 255, 95);
   padding: 0.3em 0.6em;
   margin-top: 0.6em;
   display: flex;
@@ -118,18 +132,26 @@ input:focus {
 }
 
 .submit-btn {
-  font-weight: 500;
-  font-size: 1em;
-  color: black;
-  background-color: #b4b6b7;
+  color: #db3eb1;
+  border: 6px solid #db3eb1;
+  border-radius:15px;
+  padding: .5rem .5rem;
+  font-size: 16px;
+  font-family: tahoma;
+  letter-spacing:5px;
   cursor: pointer;
+  font-weight: bold;
+  filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
+  transition: .5s;
   width: 30%;
-  height: 30px;
+  height: 50px;
   margin-bottom: 10px;
-  padding: 0.2rem;
+  background: none;
+
 }
 
 .submit-btn:hover {
-  background-color: rgb(109, 108, 108);
-  color: #fff;
+  color: black;
+  background-color: #db3eb1;
+  filter: drop-shadow(0 0 20px #db3eb1) contrast(2) brightness(2);
 }

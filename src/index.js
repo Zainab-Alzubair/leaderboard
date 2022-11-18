@@ -29,3 +29,4 @@ refresh.addEventListener('click', () => {
       document.querySelector('.table').innerHTML = result;
     });
 });
+
