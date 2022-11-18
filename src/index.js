@@ -12,6 +12,9 @@ const text = document.querySelector('.text');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   postData();
+  if (userInput.value === '' || scoreInput.value === '') {
+    alert('Please Enter a valid data');
+  }
   userInput.value = '';
   scoreInput.value = '';
 });

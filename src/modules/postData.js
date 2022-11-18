@@ -11,7 +11,7 @@ const postData = async () => {
     user: userValue,
     score: scoreValue,
   };
-  await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fUdz/scores/', {
+  await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Vq5ojTK7r1BxGfx6twwS/scores/', {
     method: 'POST',
     body: JSON.stringify(payLoadObject),
     headers: {
